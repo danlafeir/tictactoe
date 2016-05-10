@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 class Square extends React.Component {
   constructor(props){
@@ -37,4 +37,4 @@ const styles = {
   }
 }
 
-module.exports = Square;
+module.exports = Square

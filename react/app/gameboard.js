@@ -19,4 +19,4 @@ const styles = {
   }
 }
 
-module.exports = GameBoard;
+module.exports = GameBoard

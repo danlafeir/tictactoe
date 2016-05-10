@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import GameBoard from './gameboard';
+import GameBoard from './gameboard'
 
 class TicTacToe extends React.Component {
   render() {
@@ -22,4 +22,4 @@ const styles = {
   }
 };
 
-ReactDOM.render(<TicTacToe/>, document.getElementById('app'));
+ReactDOM.render(<TicTacToe/>, document.getElementById('app'))
