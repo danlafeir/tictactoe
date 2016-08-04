@@ -4,6 +4,7 @@
   "description": "implementation of tictactoe in react",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --progress --colors",
     "test": "ava"
   },
   "author": "dlaffy",
@@ -42,7 +43,7 @@
       "**/__tests__/*.js"
     ],
     "source": [
-      "**/*.{js,jsx}"
+      "**/*.js"
     ],
     "failFast": true,
     "tap": true,
