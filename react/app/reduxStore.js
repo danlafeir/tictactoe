@@ -1,10 +1,10 @@
 import { createStore } from 'redux'
 
-const playerReducer = (state = "Player One", action) => {
+const playerReducer = (state = 'X', action) => {
 	if(action.type = '#/player/change'){
-		return action.currentPlayer
+		return state === 'X' ? 'O' : 'X'
 	}
-	
+
 	return state
 }
 

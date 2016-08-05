@@ -1,16 +1,20 @@
 import React from 'react'
+import reduxStore from './reduxStore'
 
 class Square extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      value : undefined
+      value: undefined
     }
   }
 
   _click(){
     if(!this.state.value){
-     this.setState({value: 'O'})
+      this.setState({value: reduxStore().getState()})
+      reduxStore().dispatch({
+        type: '#/player/change'
+      })
     }
   }
 
