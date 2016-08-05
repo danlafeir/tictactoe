@@ -3,7 +3,12 @@ import reduxStore from './reduxStore'
 
 class PlayerIndicator extends React.Component {
   render() {
-    return <div style={styles.indicator}>Player One</div>
+    reduxStore().dispatch({
+      type: '#/player/change',
+      currentPlayer: "Player One"
+    });
+
+    return <div style={styles.indicator}>{reduxStore().getState()}</div>
   }
 }
 
@@ -11,8 +16,9 @@ const styles = {
   indicator: {
     marginTop: '5px',
     marginBottom: '5px',
+    textAlign: 'center',
     border: 'black 5px solid',
-    padding: '10px',
+    padding: '5px',
     width: '100px'
   }
 }
