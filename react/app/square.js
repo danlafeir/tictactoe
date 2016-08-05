@@ -36,7 +36,8 @@ const styles = {
   symbol: {
     width: '105px',
     margin: 'auto',
-    fontSize: '150px',
+    textAlign: 'center',
+    fontSize: '126px',
     lineHeight: '142px'
   }
 }
